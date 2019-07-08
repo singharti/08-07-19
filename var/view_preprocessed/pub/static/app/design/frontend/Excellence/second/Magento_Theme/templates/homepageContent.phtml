@@ -1,0 +1,70 @@
+<div class="row"><div style="text-align: right;" class="column-3"><img src="<?php echo $this->getViewFileUrl("images/1s.png");?> " /></div><div class="column-3"><img src="<?php echo $this->getViewFileUrl("images/2s.png");?> " /></div><div style="text-align: left;" class="column-3"><img src="<?php echo $this->getViewFileUrl("images/3s.png");?> " /></div></div><div><div class="column-2 back-img"><img class="full-width" src="<?php echo $this->getViewFileUrl("images/shot.png");?>" alt="100%-canadian-design"/><br/><div class="centered"><img src="<?php echo $this->getViewFileUrl("images/8.png");?>" alt="up-to-30"/><br/></div></div><div class="column-2 back-img"><img class="full-width" src="<?php echo $this->getViewFileUrl("images/handbags.png");?>" alt="100%-canadian-design"/><br/><div class="centered"><img src="<?php echo $this->getViewFileUrl("images/7.png");?>" alt="up-to-30"/><br/><img src="<?php echo $this->getViewFileUrl("images/10.png");?>" alt="up-to-30"/><br/></div></div></div><!-- above link set pending --><div><div class="column-2" style="text-align:left; font-family: 'Oswald', sans-serif; margin-top: -10px;"><img src="<?php echo $this->getViewFileUrl("images/13.png");?>" alt="up-to-30"/><br/></div><div class="column-2 women-catalog-slider" style="margin-top: -1%; font-family: 'Oswald', sans-serif;"><div class="catalog-text"><span style="font-size: 35px; font-weight: 500; letter-spacing: 2px;"> FEMMES</span><br/><span style="font-size: 22px; font-weight: 400;">NOUVELLE COLLECTION</span><br/><br> <span style="font-size: 17px; font-weight: 300;">Lorem ipsum dolor sit amet consectetur.<br/> Si dolor amet equtison dolor villene.</span></div><?php echo $this->getLayout() ->createBlock('Magento\Cms\Block\Block') ->setBlockId('women-s') ->toHtml(); ?></div></div><div style="width:100%; float:left; font-family: 'Oswald', sans-serif;" ><div class="column-2 men-catalog-slider"><div class="catalog-text" style="margin-bottom: 5%;"><span style="font-size: 35px; font-weight: 500; letter-spacing: 2px;" >HOMMES</span><br/><span style="font-size: 22px; font-weight: 300;">NOUVELLE COLLECTION</span><br/><span style="font-size: 16px; font-weight: 300;">Lorem ipsum dolor sit amet consectetur.<br/> Si dolor amet equtison dolor villene.</span></div><div><?php echo $this->getLayout() ->createBlock('Magento\Cms\Block\Block') ->setBlockId('men') ->toHtml(); ?></div></div><div class="column-2" style="margin-top: -10px;"><img src="<?php echo $this->getViewFileUrl("images/men-black-white.png"); ?>" alt="up-to-30"/></div></div><script>
+    require([
+        'jquery',
+        'owlcarousel'
+    ], function ($) {
+        
+        
+
+        
+        $(".less-essential-slider").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            items: 5,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });
+
+
+        
+        $(".catalog-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            items: 2,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
+                }
+            }
+        });
+
+        
+
+        $(".girls-wear").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            items: 2,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
+                }
+            }
+        });
+
+
+        
+    });</script>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+      <!-- create a new container -->
+    	  <referenceContainer name="header.container">
+          <container name="main-header-container" label="" htmlTag="div" htmlClass="main-header-container" />
+          </referenceContainer>
+        <referenceContainer name="header.container">
+        <container name="second-header-container" label="" htmlTag="div" htmlClass="second-header-container"/>
+        </referenceContainer> 
+<!-- 
+        <referenceContainer name="columns">
+          <container name="second-maincontent" label="" htmlTag="div" htmlClass="second-maincontent" />
+        </referenceContainer> 
+        <referenceContainer name="columns">
+          <container name="first-maincontent" label="" htmlTag="div" htmlClass="first-maincontent" />
+          </referenceContainer> -->
+        <!-- moved elements -->
+        <move element="logo" destination="main-header-container"/>
+        <move element="navigation.sections" destination="main-header-container" />
+		    <move element="top.search" destination="second-header-container"/>
+		    <move element="minicart" destination="header.panel" before="-"/> 
+        <move element="form.subscribe" destination="footer-container" before="-"/> 
+
+        <!-- <move element="first-maincontent" destination="columns" before="-"/> 
+        <move element="second-maincontent" destination="columns" after="-"/>  -->
+
+        <!-- <move element="button" destination="catalog.topnav"/>  -->
+        <!-- footer custom link with block phtml file -->
+       <block class="Magento\Framework\View\Element\Template" name="footer-custum-link" template="Magento_Theme::footer.phtml" />
+       <move element="footer-custum-link" destination="footer-container" />
+        <!-- remove links -->
+  	    <referenceBlock name="register-link" remove="true" />  
+  	    <!-- <referenceBlock name="authorization-link" remove="true"/> -->
+         <referenceBlock name="authorization-link" remove="false" />
+        <referenceBlock name="advanced-search-link" remove="true"/>
+         <!-- remove container -->
+        <referenceContainer name="header-wrapper" remove="true" />
+        <referenceContainer name="footer_links" remove="true" />
+         <!--  <referenceContainer name="copyright" remove="true" /> -->
+        <!-- add link in header -->
+        <!-- <referenceBlock name="header.links">
+            <block class="Magento\Framework\View\Element\Html\Link" name="sign-in-register">
+              <arguments>
+                   <argument name="label" xsi:type="string" translate="true">SIGN IN/REGISTER</argument>
+                   <argument name="path" xsi:type="string" translate="true">sign-in-register</argument>
+              </arguments>
+            
+             </block>
+        </referenceBlock> -->
+    </body>
+</page>
+

@@ -1,0 +1,47 @@
+<div>
+  <div class="block newsletter column-3" >
+    <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+      <div class="content">
+          <form class="form subscribe"novalidate action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}'id="newsletter-validate-detail">
+            <div class="newsletter-text">
+                Newsletter
+            </div>
+            <div class="field newsletter">
+              <label class="label" for="newsletter"><span><?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?></span>
+              </label>  
+              <div>
+                <input name="email" type="email" id="newsletter"  placeholder="<?= $block->escapeHtml(__('')) ?>"
+                data-validate="{required:true, 'validate-email':true}"/>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('GO')) ?>" type="submit">
+                <span><?= $block->escapeHtml(__('GO')) ?></span>
+              </button>
+            </div>
+          </form>
+          <div class="news-para">
+            <span>Please enter valid email id, We won't spam</span>
+          </div>
+      </div>
+  </div>
+  <div class="column-3">
+    <div class="box"><img  src="<?php echo $this->getViewFileUrl("images/box.png");?> " />
+      <div class="card">
+        <img  src="<?php echo $this->getViewFileUrl("images/card.png");?> " /> 
+      </div>
+      <div class="freeshipping">
+          <img  src="<?php echo $this->getViewFileUrl("images/freeshipping.png");?> " />
+      </div>
+    </div>
+  </div>
+  <div class="social">
+    <span class="first-nav">Follow Us</span>
+      <div class="social-image" >
+        <img  src="<?php echo $this->getViewFileUrl("images/facebook.png");?> " />
+        <img  src="<?php echo $this->getViewFileUrl("images/twitter.png");?> " />
+        <img  src="<?php echo $this->getViewFileUrl("images/link.png");?> " />
+        <img  src="<?php echo $this->getViewFileUrl("images/wifi.png");?> " /> 
+      </div>
+  </div>
+</div>

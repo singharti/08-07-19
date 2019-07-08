@@ -1,0 +1,13 @@
+ <div class="owl-carousel main-page-slider owl-theme slider-first"><div><img src="<?php echo $this->getViewFileUrl("images/main-image.png");?> " /></div><div><img src="<?php echo $this->getViewFileUrl("images/main-image.png");?> " /></div><div><img src="<?php echo $this->getViewFileUrl("images/main-image.png");?> " /></div></div><script>
+   require([
+       'jquery',
+       'owlcarousel'
+   ], function ($) {
+       $(".main-page-slider").owlCarousel({
+           loop: true,
+           dots:false,
+           autoplay: true, 
+           autoplayHoverPause: true, 
+           items : 1
+       });
+   });</script>

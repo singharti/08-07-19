@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <head>
+       <!-- <css src="css/source/style.css" /> -->
+       <!-- bootstrap cdn links
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js" src_type="url" type="text/javascript" />
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" src_type="url" type="text/javascript" />
+       <css src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"  src_type="url" rel="stylesheet" type="text/css"  />
+       -->
+       <!--<script src="js/script.js" type="text/javascript" />-->
+       <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" src_type="url" />
+       <link rel="stylesheet" type="text/css" src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" src_type="url" />
+
+   </head>
+</page>
